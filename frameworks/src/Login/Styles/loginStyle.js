@@ -3,13 +3,13 @@ export default css`
 
 #usuario{
 
-    background-color: #FF7400;
+    background-color: #00a135;
 
 }
 
 #password{
 
-    background-color: #FF7400;
+    background-color: #00a135;
 }
 
 `;

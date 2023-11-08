@@ -98,17 +98,17 @@ export class LoginElement extends LitElement {
         </style>
 
         <div class="container position-relative" style = "height: 500px; width: 500px; margin-top: 150px;">
-            <div class="position-absolute bottom-50 start-50 translate-middle z-index-1" ><img src="./src/img/icon.png" style="height: 200px; width: 200px; margin-top: 215px;"></div>
+            <div class="position-absolute bottom-50 start-50 translate-middle z-index-1" ><img src="./src/img/draco.png" style="height: 200px; width: 200px; margin-top: 215px;"></div>
                 <div class="container border border-0 rounded px-5 py-5 bg-light position-relative">
             
                     <center><h2>Iniciar Sesión</h2></center>
                     <div class="mb-3 mt-5 d-flex">
-                        <span class="input-group-text bg-icon"><i class="fa-solid fa-user" style="color: #FF7400"></i></span>
+                        <span class="input-group-text bg-icon"><i class="fa-solid fa-user" style="color: #00a135"></i></span>
                         <input type="text" id="usuario" name="usuario" class="w-100 rounded form-control bg-input placeholder-white" placeholder="usuario" required>
                     </div>
 
                     <div class="mb-3 d-flex">
-                        <span class="input-group-text bg-icon"><i class="fas fa-lock style="color: #FF7400"></i></span>
+                        <span class="input-group-text bg-icon"><i class="fas fa-lock style="color: #00a135"></i></span>
                         <input type="password" id="password" name="password" class="w-100 rounded form-control bg-input placeholder-white" placeholder="password" required>
                     </div>
 

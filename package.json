@@ -1,12 +1,12 @@
 {
-  "name": "frameworks",
+  "name": "frameworks---mafe",
   "version": "1.0.0",
-  "description": "aqui amamos a yoongi y a los bts",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "una army psicotica",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "lit-element": "^3.0.0-rc.4"
