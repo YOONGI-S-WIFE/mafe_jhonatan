@@ -4,177 +4,140 @@ import styles2 from './Styles/styles2';
 class UsuarioElement2 extends LitElement {
 
   static get styles() {
-
-    return [styles2]
-
-}
-
-ingresar_campaña (parameters) {
-
-  const usuario=document.createElement('campañas-element');
-            document.body.innerHTML='';
-            document.body.appendChild(usuario);
-  
-}
-
-ingresar_equipo (parameters) {
-
-  const usuario=document.createElement('equipos-element');
-            document.body.innerHTML='';
-            document.body.appendChild(usuario);
-  
-}
-
-ingresar_llamadas (parameters) {
-
-  const usuario=document.createElement('pagina2-element');
-            document.body.innerHTML='';
-            document.body.appendChild(usuario);
-  
-}
-
-ingresar_usuario (parameters) {
-
-  const usuario=document.createElement('usuarios-element');
-            document.body.innerHTML='';
-            document.body.appendChild(usuario);
-  
-}
-
-ingresar_clientes (parameters) {
-
-  const usuario=document.createElement('pagina1-element');
-            document.body.innerHTML='';
-            document.body.appendChild(usuario);
-  
-}
-
+    return [styles2];
+  }
   render() {
     return html`
-
-          <style>
-
+      <style>
         @import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css");
         @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
-      
-        </style>
+      </style>
 
-        <!-- Contenedor principal -->
-
-        <div id = "contenedorPagina">
-
-            <div class ="" id = "contenedorPrincipal">
-                
-                <!-- Contenedor izquierdo -->
-          
-                <div class= "navbar-left navbar-nav pull-left" id = "contenedorIzquierdo">
-          
-                    <!-- Botones en el contenedor izquierdo -->
-
-                    <button class="btn btn-primary mb-3" id="clientes-button" @click=${(e) => this.ingresar_clientes()}><i class="bi bi-people"></i> clientes </button>
-
-                    <button class="btn btn-primary mb-3" id="llamadas-button" @click=${(e) => this.ingresar_llamadas()}><i class="bi bi-people"></i> llamadas </button>
-          
-                    <button class="btn btn-primary mb-3" id="usuarios-button" @click=${(e) => this.ingresar_usuario()}><i class="bi bi-people"></i> Usuarios </button>
-                    
-                    <button class="btn btn-primary mb-3" id="campañas-button" @click=${(e) => this.ingresar_campaña()}><i class="bi bi-megaphone"></i> Campañas </button> 
-                    
-                    <button class="btn btn-primary mb-3" id="equipos-button" @click=${(e) => this.ingresar_equipo()}><i class="bi bi-people"></i> Equipos </button>
-      
-                </div>
-                
-                </div>
-        
-                <div class ="" id = "contenedorSecundario">
-        
-                    <!-- Espacios en la parte superior -->
-          
-                    <div class= "container-fluid list-inline" id = "cardsUsuarios">
-                      
-                      <div id = "usuariosConectados">
-        
-                        <div  id = "mitadDerecha">
-        
-                          Usuarios Conectados:
-        
-                        </div>
-                        
-                        <div  id = "mitadIzquierda"> 10 </div>
-        
-                      </div>
-        
-                      <div id ="usuariosAusentes" >
-        
-                        <div id = "mitadDerecha3" >
-        
-                          Usuarios Ausentes:
-        
-                        </div>
-                        
-                        <div id = "mitadIzquierda" > 5 </div>
-        
-                      </div>
-        
-                      <div id="campañasActivas">
-        
-                        <div id = "mitadDerecha2">
-        
-                          Campañas Activas:
-        
-                        </div>
-        
-                        <div id = "mitad_Izquierda2"> 3 </div>
-        
-                      </div>
-        
-                    </div>
-                  
-                  <!-- Contenedor derecho -->
-          
-                  <div class="pull-left panel-body" id = "contenedorDerecho">
-        
-                    <!-- Formulario en el contenedor derecho -->
-          
-                    <div class="navbar-form" id = "contenedorFormulario">
-          
-                      <div class="navbar-form" id = "formulario">
-          
-                        <label for="numero">Número:</label>
-                        <input type="text" class="form-control" id="numero" />
-        
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" class="form-control" id="nombre" />
-
-                        <br>
-        
-                        <button class="btn btn-primary"> Buscar </button>
-                        
-                      </div>
-        
-                      </div>
-        
-                      <!-- Botones en la parte superior del contenedor derecho -->
-        
-                      <div id = "segundo_contenedor">
-
-                    <div id="filtrarNuevo" class = "container-fluid list-inline">
-        
-                      <button id="filtrar">Filtrar</button>
-                      <button id="nuevo">Nuevo</button>
-        
-                    </div>
-
-                    <div id = "penultimoContenedor">buenas :3</div>
-                                
-                    <div id = "ultimoContenedor">buenas x2 :3</div>
-
-                  </div>
-
-                  </div>
-        
-                  </div>
-
+      <div class="bg-light vw-100 vh-100 d-flex">
+        <div class="bg-secondary1 w-25  m-3 border-20 p-3">
+          <div class="bg-color-secondary">
+            <button class="w-100 mt-5 p-2 border-10">
+              <i class="fas fa-user"></i>Usuarios
+            </button>
+            <button class="w-100 mt-5 p-2 border-10">
+              <i class="fas fa-bullhorn"></i>Campañas
+            </button>
+            <button class="w-100 mt-5 p-2 border-10">
+              <i class="fas fa-users"></i>Equipos
+            </button>
+            <br /><br />
+          </div>
         </div>
+        <div class="bg-color-dark w-75  d-flex flex-column m-3">
+          <div class="d-flex justify-content-between m-3 h-25">
+            <div
+              class="container d-flex justify-content-center align-items-center h-100 w-100"
+            >
+              <div
+                class="h-50 w-50 bg-icon1 container d-flex justify-content-center align-items-center border-left text-center num-big"
+              >
+                <p class="text-white">10m</p>
+              </div>
+              <div
+                class="h-50 w-50 container d-flex justify-content-center align-items-center border-right bg-input text-center text-big"
+              >
+                <p class="text-white">Tiempó <br />Llamadas</p>
+              </div>
+            </div>
+            <div
+              class="container d-flex justify-content-center align-items-center h-100 w-100"
+            >
+              <div
+                class="h-50 w-50 bg-icon1 container d-flex justify-content-center align-items-center border-left text-center num-big"
+              >
+                <p class="text-white">10m</p>
+              </div>
+              <div
+                class="h-50 w-50 text-center container d-flex justify-content-center align-items-center border-right bg-input text-center text-big"
+              >
+                <p class="text-white">
+                  Tiempo <br />Llamada <br />
+                  Actual
+                </p>
+              </div>
+            </div>
+            <div
+              class="container d-flex justify-content-center align-items-center h-100 w-100"
+            >
+              <div
+                class="h-50 w-50 bg-icon1 container d-flex justify-content-center align-items-center border-left text-center num-small"
+              >
+                <p class="text-white">Campaña 1</p>
+              </div>
+              <div
+                class="h-50 w-50 container d-flex justify-content-center align-items-center border-right bg-input text-center text-big"
+              >
+                <p class="text-white">Campañas <br />Activas</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-primary1 h-75 d-flex p-3">
+            <div class="w-25 mx-3 border-20 border-1 border border-dark">
+              <div class="d-flex flex-column p-3 bg-color-secondary border-20">
+                <div class="d-flex flex-row">
+                  <i class="fas fa-hashtag" style="color: #00a135;">
+                    <input
+                      class="m-2 p-2 border-10 border-0"
+                      type="text"
+                      placeholder="Numero"
+                  /></i>
+                </div>
+
+                <div class="d-flex flex-row">
+                  <i class="fas fa-user" style="color: #00a135;">
+                    <input
+                      class="m-2 p-2 border-10 border-0"
+                      placeholder="Nombre"
+                  /></i>
+                </div>
+
+                <div class="d-flex justify-content-center aling-items-center">
+                  <button
+                    class="m-2 w-50  border-10 bg-icon text-white border-0 p-2"
+                  >
+                    Iniciar
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="w-75 bg-secondary d-flex flex-column">
+              <br />
+              <div class="row">
+                <div class="col">
+                  <button class="border-10 p-2 text-big">
+                    Datos Llamada <i class="fas fa-phone fa-beat"></i>
+                  </button>
+                </div>
+
+                <div class="col">
+                  <button
+                    class="bg-icon text-white p-2 text-big border-10 float-end"
+                  >
+                    10:00:00 <i class="fa-solid fa-clock fa-spin"></i>
+                  </button>
+                </div>
+              </div>
+              <br />
+              <div
+                class="bg-color-secondary1 d-flex justify-content-center align-items-center h-100"
+              >
+                <div class="border-dark col border  w-100 h-100"></div>
+              </div>
+
+              <div
+                class="bg-color-secondary1 d-flex justify-content-center align-items-center h-100"
+              >
+                <div class="border-dark col border  w-75 h-75"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
     `;
   }
